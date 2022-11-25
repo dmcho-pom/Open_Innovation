@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.813em;
+    font-family: 'Noto Sans KR', AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+    letter-spacing: -1px;
+    color: #1F262D;
+}
+
+.pure-group {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+    text-align: center;
+}
+
+.send_button {
+    text-align: center;
+}
