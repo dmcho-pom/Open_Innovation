@@ -10,75 +10,101 @@
 </head>
 
 <body>
-    <h2 class="content-head is-center">Contact Us!</h2>
-    <aside>
-        <p>
-            We would <em>love</em> to hear from you! </p>
-        <p>Please use the <b><em>Contact Form</em></b> to send us a message.
-        </p>
-    </aside>
-
-    <!-- START HERE -->
-
-    <script>
-        function onSubmit() {
-            let doc = document.querySelector('.thankyou_message');
-            doc.style.display = "block";
-        }
-    </script>
-
-
-    <form onsubmit="onSubmit()" target="iframe1" class="gform pure-form pure-form-stacked" method="POST" data-email="rskm@planonmars.com" action="https://script.google.com/macros/s/AKfycbxuEOG7-exLg1PYtQkIVIYAcCv9Sf8XtcpqNcSWr5goiqhCJBKfu4KqXQlE2T4eqemSAQ/exec">
-        <!-- change the form action to your script url -->
-
-        <div class="form-elements">
-            <div class="pure-group">
-                <label for="name">이름* </label><br>
-                <input id="name" name="name" placeholder="홍길동" required/>
+    <div class="hd_container">
+        <div id="header">
+            <a href="/">
+                <img src="./img/logo_1.png">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="/" class="Home">Home</a>
+            <a href="./event/event.html" class="Event">Event</a>
+            <a href="" class="Contact">Contact</a>
+        </div>
+        <div>
+            <img src="./img/main.png" width="100%">
+        </div>
+        <!--
+        <div class="button_wrap">
+            <div class="togo_pofol">
+                <a href="" target="_blank">
+                    <p>생중계 시청하기</p>
+                </a>
             </div>
-
-            <div class="pure-group">
-                <label for="message">응원의 한마디* </label><br>
-                <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
-            </div>
-
-            <div class="pure-group">
-                <label for="email">이메일 주소*</label><br>
-                <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" required/>
-            </div>
-
-            <div class="pure-group">
-                <label for="phone">휴대푠 번호* </label><br>
-                <input id="phone" name="phone" placeholder="010-0000-0000" required/>
-            </div>
-            <div id="required_input_message">
-                * 항목은 필수입력 항목입니다.
-            </div>
-            <div class="pure-group">
-                <label for="agree"><b>개인정보 수집동의</b></label>
-                <input type="checkbox" id="agreed" name="agree" value="동의" required>동의
-                <a href="./private.html" target="_blank"><input type="button" value="전문보기"></a>
-            </div>
-
-            <div class="send_button">
-                <button style="display: inline-block;">
-                    이벤트 참여하기
-                </button>
+            <div class="togo_pofol">
+                <a href="" target="_blank">
+                    <p>이벤트 참여하기</p>
+                </a>
             </div>
         </div>
+        -->
+    </div>
+    <div class="main_text01">
+        <h1>OPEN INNOVATION</h1>
+        <p>[개방형 혁신]</p>
+        <p>대기업의 사업리딩, 인프라/자원 집중력을 바탕으로 스타트업의 혁신기술과 신속한 실행력을 결합하여 새로운 시장을 주도할 수 있는 ‘혁신사업’을 찾는 과정</p>
+        <img src="./img/model1.png" style="display:block; margin: auto;" width="70%">
+    </div>
+    <div class="calendar">
+        <table class="type07">
+            <tbody>
+                <thead>
+                    <tr>
+                        <th id="TL" scope="cols">구분</th>
+                        <th id="TL" scope="cols">시간</th>
+                        <th id="TL" scope="cols">프로그램</th>
+                        <th id="TL" scope="cols">비고</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th scope="row">지원대상</th>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                </tr>
+                <tr>
+                    <th scope="row">사업기간</th>
+                    <td>ㆍ주관기관 총 2년(2021년 선정기관)</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                </tr>
+                <tr>
+                    <th scope="row">주요내용</th>
+                    <td>ㆍ실험실창업 유망기술 후속 R&D 자금, 사업화모델 개발, 법인설립준비, 투자유치 등 실험실창업 준비 지원</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                </tr>
+                <tr>
+                    <th scope="row">사업기간</th>
+                    <td>ㆍ주관기관 총 2년(2021년 선정기관)</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                </tr>
+                <tr>
+                    <th scope="row">사업기간</th>
+                    <td>ㆍ주관기관 총 2년(2021년 선정기관)</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                </tr>
+                <tr>
+                    <th scope="row">사업기간</th>
+                    <td>ㆍ주관기관 총 2년(2021년 선정기관)</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                    <td>ㆍ4년제 일반대학 및 산업대학, 과학기술원</td>
+                </tr>
 
-        <!-- Customise the Thankyou Message People See when they submit the form: -->
-        <div class="thankyou_message" style="display:none">
-            <h2>이벤트 참여가 완료되었습니다.</h2>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div id="ft">
+            <div class="ft_wr">
+                <div class="ft_copy">
+                    <p>COPYRIGHT © 2022. <b>창조경제혁신센터</b> ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
         </div>
-
-    </form>
-    <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
-
-    <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" src="form-submission-handler.js"></script>
-    <!-- END -->
-
+    </footer>
 </body>
 
 </html>

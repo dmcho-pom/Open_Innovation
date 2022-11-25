@@ -2,32 +2,144 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0.813em;
-    font-family: 'Noto Sans KR', AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+    font-family: 'Noto Sans KR', 'AppleSDGothicNeo-Regular', 'Malgun Gothic', '맑은 고딕', 'dotum', '돋움', sans-serif;
     letter-spacing: -1px;
     color: #1F262D;
 }
 
-.pure-group {
+p {
     display: block;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 2px groove (internal value);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#header img {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    transform: translate(0, -50%);
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 46vw;
+    height: 80px;
+    top: 0;
+    left: 75%;
+    transform: translate(-50%, 0);
+}
+
+.menu a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration-line: none;
+    color: white;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.main_text01 {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+
+/* footer */
+
+#ft {
+    background: #222;
+}
+
+.ft_wr {
+    background: #1f262d;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.ft_copy {
+    list-style: none;
+    display: inline-block;
+}
+
+
+/* footer over */
+
+
+/* 테이블 값 시작 */
+
+table.type07 {
+    border-collapse: collapse;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    margin: 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 120px;
+    width: 80%;
+}
+
+table.type07 thead {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background: #1D9898;
+}
+
+table.type07 thead #TL {
+    padding: 1px 0;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -0.1em;
+}
+
+table.type07 thead th {
+    padding: 10px 0;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -0.1em;
+}
+
+table.type07 tbody th {
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+    background: #CFF6E8;
     text-align: center;
 }
 
-.send_button {
+table.type07 #FV {
+    width: auto;
+    padding: 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     text-align: center;
+    vertical-align: middle;
 }
 
-#required_input_message {
+table.type07 td {
+    width: auto;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     text-align: center;
-    font-weight: lighter;
+    vertical-align: middle;
 }
 
-.thankyou_message {
-    text-align: center;
-}
+
+/* 테이블 값 끝 */
