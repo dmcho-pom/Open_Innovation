@@ -20,34 +20,43 @@
 
     <!-- START HERE -->
 
+    <script>
+        function onSubmit() {
+            let doc = document.querySelector('.thankyou_message');
+            doc.style.display = "block";
+        }
+    </script>
 
-    <form target=i frame1 class="gform pure-form pure-form-stacked" method="POST" data-email="rskm@planonmars.com" action="https://script.google.com/macros/s/AKfycbxuEOG7-exLg1PYtQkIVIYAcCv9Sf8XtcpqNcSWr5goiqhCJBKfu4KqXQlE2T4eqemSAQ/exec">
+
+    <form onsubmit="onSubmit()" target="iframe1" class="gform pure-form pure-form-stacked" method="POST" data-email="rskm@planonmars.com" action="https://script.google.com/macros/s/AKfycbxuEOG7-exLg1PYtQkIVIYAcCv9Sf8XtcpqNcSWr5goiqhCJBKfu4KqXQlE2T4eqemSAQ/exec">
         <!-- change the form action to your script url -->
 
         <div class="form-elements">
             <div class="pure-group">
-                <label for="name">이름 </label><br>
+                <label for="name">이름* </label><br>
                 <input id="name" name="name" placeholder="홍길동" required/>
             </div>
 
             <div class="pure-group">
-                <label for="message">응원의 한마디 </label><br>
+                <label for="message">응원의 한마디* </label><br>
                 <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
             </div>
 
             <div class="pure-group">
-                <label for="email">이메일 주소</label><br>
+                <label for="email">이메일 주소*</label><br>
                 <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" required/>
             </div>
 
             <div class="pure-group">
-                <label for="phone">휴대푠 번호 </label><br>
+                <label for="phone">휴대푠 번호* </label><br>
                 <input id="phone" name="phone" placeholder="010-0000-0000" required/>
             </div>
+            <div id="required_input_message">
+                * 항목은 필수입력 항목입니다.
+            </div>
             <div class="pure-group">
-                <label for="agree">개인정보 수집동의 </label>
-                <input type="checkbox" id="agreed" name="agree" value="동의" onclick="is_checked()" required>동의
-                <input type="checkbox" id="refused" name="agree" value="비동의">비동의
+                <label for="agree"><b>개인정보 수집동의</b></label>
+                <input type="checkbox" id="agreed" name="agree" value="동의" required>동의
                 <a href="./private.html" target="_blank"><input type="button" value="전문보기"></a>
             </div>
 
@@ -59,8 +68,8 @@
         </div>
 
         <!-- Customise the Thankyou Message People See when they submit the form: -->
-        <div class="thankyou_message" style="display:block">
-            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+        <div class="thankyou_message" style="display:none">
+            <h2>이벤트 참여가 완료되었습니다.</h2>
         </div>
 
     </form>

@@ -22,3 +22,12 @@ body {
 .send_button {
     text-align: center;
 }
+
+#required_input_message {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.thankyou_message {
+    text-align: center;
+}
