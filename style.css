@@ -49,28 +49,50 @@ p {
     margin: auto;
 }
 
-
-/* footer */
-
-#ft {
-    background: #222;
-}
-
-.ft_wr {
-    background: #1f262d;
-    color: #ffffff;
+h1 {
     text-align: center;
-    padding: 40px 20px;
+    margin: 100px 0 0 0;
+    font-size: xx-large;
 }
 
-.ft_copy {
-    list-style: none;
-    display: inline-block;
+#innovation_text {
+    font-size: large;
+    font-weight: bold;
+    margin: 0 0 50px 0;
+}
+
+.main_text01 p {
+    text-align: center;
+    margin: 50px 0 100px 0;
+    font-size: large;
+}
+
+.Professional {
+    display: block;
+    margin: 200px 0 0 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.cube {
+    width: 16px;
+    height: 15.5px;
 }
 
 
-/* footer over */
+.process {
+    position: relative;
+    margin: 0;
+    padding: 0 10% 0 10%;
+}
 
+.process p {
+    font-size: small;
+    margin: 15px auto 15px 15px;
+}
 
 /* 테이블 값 시작 */
 
@@ -88,7 +110,7 @@ table.type07 {
 table.type07 thead {
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
-    background: #1D9898;
+    background: #8133C0;
 }
 
 table.type07 thead #TL {
@@ -109,26 +131,6 @@ table.type07 thead th {
     letter-spacing: -0.1em;
 }
 
-table.type07 tbody th {
-    width: auto;
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: middle;
-    border-bottom: 1px solid #ccc;
-    background: #CFF6E8;
-    text-align: center;
-}
-
-table.type07 #FV {
-    width: auto;
-    padding: 10px;
-    vertical-align: middle;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    text-align: center;
-    vertical-align: middle;
-}
 
 table.type07 td {
     width: auto;
@@ -139,7 +141,69 @@ table.type07 td {
     border-left: 1px solid #ccc;
     text-align: center;
     vertical-align: middle;
+    font-weight: bold;
+}
+
+table.type07 td #Left_Text {
+    text-align: left;
+}
+
+/* 테이블 값 끝 */
+
+
+.host {
+    position: relative;
+    overflow: hidden;
+    background: url(./img/background3.png)no-repeat center center;
+    width: 100%;
+    background-size: cover;
+    padding: 50px 0 50px 0;
+    margin: 100px 0 100px 0;
+}
+
+.host img {
+    position: relative;
+    display: block;
+    margin: auto;
 }
 
 
-/* 테이블 값 끝 */
+#host_logo {
+    padding: 50px 0 0 0;
+}
+
+.place {
+    position: relative;
+    margin: 0;
+    padding: 0 10% 0 10%;
+}
+
+.place .place_adress {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.place .place_adress2 {
+    font-size: large;
+    font-weight: bold;
+}
+/* footer */
+
+#ft {
+    background: #222;
+}
+
+.ft_wr {
+    background: #1f262d;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.ft_copy {
+    list-style: none;
+    display: inline-block;
+}
+
+
+/* footer over */
