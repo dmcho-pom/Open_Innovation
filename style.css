@@ -187,6 +187,16 @@ table.type07 td #Left_Text {
     font-size: large;
     font-weight: bold;
 }
+
+#howtocome {
+    display: block;
+    margin-bottom: 300px;
+}
+
+.transportation {
+    padding-left: 10px;
+}
+
 /* footer */
 
 #ft {

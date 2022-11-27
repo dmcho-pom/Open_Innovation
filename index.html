@@ -1,10 +1,23 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" class=" js  no-overflowscrolling">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="contact form example">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">    <meta name="description" content="contact form example">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="2022 창조경제혁신센터 오픈이노베이션 행사안내, 이벤트, 문의하기">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+    <meta property="og:title" content="2022 창조경제혁신센터 오픈이노베이션 CROSS LINK">
+    <meta property="og:url" content="http://www.openccei.or.kr">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/poster.jpg">
+    <meta property="og:site_name" content="2022 창조경제혁신센터 오픈이노베이션 CROSS LINK">
+    <meta property="og:description" content="2022 창조경제혁신센터 오픈이노베이션 CROSS LINK 행사안내, 이벤트, 문의하기">
+    <meta name="keywords" content="2022오픈이노베이션, 오픈이노베이션, CrossLink, 크로스링크, 창조경제혁신센터2022">
+    <!-- 구글 웹폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&amp;subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <title>2022 창조경제혁신센터 오픈이노베이션</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -153,18 +166,48 @@
                 <p>경기도 성남시 수정구 시흥동 대왕판교로 815 판교 제2테크노밸리 기업지원허브</p>
             </div>
             <div class="naver-maps">
+                <section class="section" id="section-3">
+                    <div id="map" style="width: 100%; height: 500px; margin:auto"></div>
+                    <code id="snippet" class="snippet"></code>
+                </section>
             </div>
+                <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=d9nyuxutsw"></script>
+                <script id="code">
+                    var mapDiv = document.getElementById('map');
+                    var map = new naver.maps.Map(mapDiv);
+                </script>
+                <script id="code">
+                    var map = new naver.maps.Map('map', {
+                        center: new naver.maps.LatLng(37.4133, 127.0997), //지도의 초기 중심 좌표
+                        zoom: 18, //지도의 초기 줌 레벨
+                        minZoom: 8, //지도의 최소 줌 레벨
+                        zoomControl: true, //줌 컨트롤의 표시 여부
+                        zoomControlOptions: { //줌 컨트롤의 옵션
+                            position: naver.maps.Position.TOP_RIGHT
+                    }});
+                    var marker = new naver.maps.Marker({
+                        position: new naver.maps.LatLng(37.4133, 127.0997),
+                        map: map
+                    });
+            </script>
             <h3>
                 <img class="cube" src="./img/purplecube.png">
                 대중교통 이용안내
-                <div id="howtocome">
-                    <p>ㆍ수서역에서 오시는 방법<br>
-                        수서역 6번출구 앞 버스정류장에서 수원, 용인 방면으로 광역버스(1007, 1007-1, 1009, 5600, 5700, 6900번) 또는 일반 시내버스(101번) 승차 후, 판교제2테크노밸리 정류장 하차<br>
-                        ㆍ판교역에서 오시는 방법<br>
-                        판교역 2번출구 건너편 버스정류장에서 서울방면으로 일반 시내버스(55, 101, 누리2번) 또는 광역버스(1002번) 승차 후, 판교 제2테크노밸리/기업지원허브 정류장 하차
-                    </p>
-                </div>
             </h3>
+            <div id="howtocome">
+                <div>
+                    ㆍ수서역에서 오시는 방법
+                </div>
+                <div class="transportation">
+                    수서역 6번출구 앞 버스정류장에서 수원, 용인 방면으로 광역버스(1007, 1007-1, 1009, 5600, 5700, 6900번) 또는 일반 시내버스(101번) 승차 후, 판교제2테크노밸리 정류장 하차
+                </div>
+                <div>
+                    ㆍ판교역에서 오시는 방법
+                </div>
+                <div class="transportation">
+                    판교역 2번출구 건너편 버스정류장에서 서울방면으로 일반 시내버스(55, 101, 누리2번) 또는 광역버스(1002번) 승차 후, 판교 제2테크노밸리/기업지원허브 정류장 하차
+                </div>
+            </div>
         </div>
     </div>
 
